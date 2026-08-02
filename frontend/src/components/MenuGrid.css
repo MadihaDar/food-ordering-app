@@ -1,0 +1,16 @@
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 22px;
+  padding-bottom: 60px;
+}
+
+.menu-grid__status {
+  padding: 60px 0;
+  text-align: center;
+  color: rgba(34, 29, 26, 0.6);
+}
+
+.menu-grid__status--error {
+  color: var(--paprika);
+}

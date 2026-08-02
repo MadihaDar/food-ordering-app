@@ -1,0 +1,143 @@
+/* ---------------------------------------------------------------
+   Zaiqa — design tokens
+   Palette pulled from spice stalls & enamel signage: charcoal ink,
+   saffron, paprika, deep maroon, warm paper cream, sage for "veg" tags.
+   Display face Fraunces (characterful serif) + Work Sans (body) +
+   IBM Plex Mono (prices / order tokens, like a receipt printer).
+----------------------------------------------------------------*/
+:root {
+  --charcoal: #221d1a;
+  --cream: #f6eedd;
+  --cream-dim: #efe4cd;
+  --saffron: #e8a33d;
+  --saffron-dark: #c8852a;
+  --paprika: #b23a24;
+  --maroon: #5c1a24;
+  --sage: #74863f;
+  --line: rgba(34, 29, 26, 0.14);
+
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Work Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --radius: 14px;
+  --shadow-card: 0 6px 20px rgba(34, 29, 26, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+
+#menu,
+#about {
+  scroll-margin-top: 90px;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--charcoal);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+:focus-visible {
+  outline: 3px solid var(--paprika);
+  outline-offset: 2px;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--paprika);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-primary {
+  background: var(--paprika);
+  color: var(--cream);
+  margin-bottom: 40px;
+
+}
+
+.btn-primary:hover {
+  background: #9c3220;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1.5px solid var(--charcoal);
+  color: var(--charcoal);
+}
+
+.btn-secondary:hover {
+  background: var(--charcoal);
+  color: var(--cream);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--maroon);
+  padding: 8px 12px;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

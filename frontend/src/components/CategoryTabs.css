@@ -1,0 +1,34 @@
+.cat-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 4px 0 8px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+}
+
+.cat-tabs__tab {
+  background: transparent;
+  border: none;
+  padding: 10px 4px;
+  font-weight: 600;
+  font-size: 14.5px;
+  color: rgba(34, 29, 26, 0.55);
+  position: relative;
+  margin-right: 18px;
+}
+
+.cat-tabs__tab.is-active {
+  color: var(--maroon);
+}
+
+.cat-tabs__tab.is-active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -9px;
+  height: 3px;
+  background: var(--saffron);
+  border-radius: 2px;
+}

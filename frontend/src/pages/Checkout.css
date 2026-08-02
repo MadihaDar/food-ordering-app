@@ -1,0 +1,122 @@
+.checkout {
+  padding: 48px 24px 80px;
+}
+
+.checkout h1 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  margin-bottom: 28px;
+}
+
+.checkout__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.checkout__form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: #fff;
+  padding: 28px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+}
+
+.checkout__form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.checkout__form input,
+.checkout__form textarea {
+  border: 1.5px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  resize: vertical;
+}
+
+.checkout__order-type {
+  border: 1.5px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 14px;
+  display: flex;
+  gap: 20px;
+}
+
+.checkout__order-type legend {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0 4px;
+}
+
+.checkout__radio {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 400 !important;
+  flex-direction: row !important;
+}
+
+.checkout__error {
+  color: var(--paprika);
+  font-size: 13.5px;
+}
+
+.checkout__submit {
+  padding: 14px;
+  font-size: 15.5px;
+}
+
+.checkout__summary {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow-card);
+  position: sticky;
+  top: 90px;
+}
+
+.checkout__summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+  margin: 10px 0;
+}
+
+.checkout__divider {
+  border-top: 1px dashed var(--line);
+  margin: 14px 0;
+}
+
+.checkout__summary-total {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--paprika);
+}
+
+.checkout-empty {
+  padding: 100px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .checkout__grid {
+    grid-template-columns: 1fr;
+  }
+  .checkout__summary {
+    position: static;
+  }
+}

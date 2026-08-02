@@ -1,0 +1,62 @@
+.confirm {
+  padding: 70px 24px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.confirm-empty {
+  padding: 100px 24px;
+  text-align: center;
+}
+
+.token-card {
+  background: #fffdf8;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  padding: 36px 40px 32px;
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+}
+
+.token-card__perforation {
+  height: 8px;
+  margin: -36px -40px 20px;
+  background-image: radial-gradient(circle, rgba(34, 29, 26, 0.35) 2px, transparent 2.2px);
+  background-size: 16px 8px;
+}
+
+.token-card__label {
+  font-size: 13px;
+  color: rgba(34, 29, 26, 0.6);
+  margin: 12px 0 4px;
+}
+
+.token-card__number {
+  font-family: var(--font-mono);
+  font-size: 56px;
+  font-weight: 600;
+  color: var(--paprika);
+  margin: 0 0 10px;
+  letter-spacing: 0.05em;
+}
+
+.token-card__note {
+  font-size: 13.5px;
+  color: rgba(34, 29, 26, 0.65);
+  line-height: 1.5;
+}
+
+.token-card__divider {
+  border-top: 1.5px dashed var(--line);
+  margin: 18px 0;
+}
+
+.token-card__row {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-weight: 600;
+}

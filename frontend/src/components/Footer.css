@@ -1,0 +1,38 @@
+.site-footer {
+  background: var(--maroon);
+  color: var(--cream);
+  margin-top: 40px;
+}
+
+.site-footer__inner {
+  padding: 40px 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.site-footer__brand {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--saffron);
+}
+
+.site-footer p {
+  margin: 6px 0 0;
+  opacity: 0.85;
+  font-size: 14px;
+}
+
+.site-footer__meta {
+  text-align: right;
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+@media (max-width: 560px) {
+  .site-footer__meta {
+    text-align: left;
+  }
+}
